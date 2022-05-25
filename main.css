@@ -1,0 +1,149 @@
+body{
+    display: grid;
+    font-family: sans-serif;
+    margin: 0px;
+    background-image: url("images/Copia\ de\ Sin\ título.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #40a356b4;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    padding: 10px;
+    height: 70px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+nav a{
+    display: flex;
+    font-weight: 600;
+    padding-right: 10px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+main img{
+    height: 163px;
+    align-items: center;
+}
+.about-us{
+    
+    background-color: #ffffffbe;
+}
+.operations{
+    margin-top: 10px;
+    background-color: #299941dc;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:#ffffffbe;
+}
+.social-link{
+    color: black ;
+    text-decoration: none;
+    font-size: 32px;
+    text-align: center;
+}
+.catalogo-main{
+    background-color: #ffffffbe;
+}
+.catalogo-main img{
+    height: 150px;
+}
+.catalogo-footer{
+    background-color: #299941dc;
+}
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
+    .logo img{
+        height: 100px;
+    }
+}
+@media (min-width:1200px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main"
+        "footer footer footer";
+    }
+    header {
+            display: flex;
+            flex-direction: row;
+            min-height: 70px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #40a356b4;
+            padding: 10px;
+            }
+
+    .about-us{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        font-size: large;
+        
+    }
+    .about-us img{
+        height: fit-content;
+        padding: 10px;
+    }
+    .operations{
+        text-align: center;
+        font-size: large;
+    }
+    .catalogo-main{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .catalogo-main img{
+        display: flex;
+        flex-direction: row;
+        min-height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        background-color: #40a356b4;
+        padding: 10px;
+
+    }
+    
+
+
+
